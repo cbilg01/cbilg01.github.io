@@ -58,17 +58,17 @@ body {
   color: var(--red);
 }
 
-/* Intro section: compact block on the right */
+/* Intro section: compact block on the left */
 .intro-section {
   min-height: 430px;
   padding: 78px 90px 30px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .intro-text {
   width: 100%;
-  max-width: 760px;
+  max-width: 620px;
   text-align: left;
 }
 
