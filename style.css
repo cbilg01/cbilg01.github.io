@@ -77,8 +77,8 @@ body {
   color: var(--gray);
   text-transform: uppercase;
   letter-spacing: 0.35em;
-  font-size: 8px;
-  font-weight: 600;
+  font-size: 5px;
+  font-weight: 500;
   margin-bottom: 28px;
 }
 
