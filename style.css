@@ -20,7 +20,11 @@ body {
   color: var(--dark);
 }
 
-/* Top bar kept clean and fixed visually */
+/* Top bar */
+.site-header {
+  background: var(--cream);
+}
+
 .navbar {
   height: 105px;
   padding: 0 84px;
@@ -38,27 +42,27 @@ body {
   color: var(--dark);
 }
 
-nav {
+.nav-links {
   display: flex;
   gap: 34px;
 }
 
-nav a {
+.nav-links a {
   color: var(--dark);
   text-decoration: none;
   font-size: 20px;
   transition: color 0.2s ease;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: var(--red);
 }
 
-/* Intro moved up, condensed, and aligned left */
+/* Intro section aligned to the left */
 .intro-section {
   min-height: 300px;
   display: grid;
-  grid-template-columns: 1fr 520px;
+  grid-template-columns: 520px 1fr;
   padding: 52px 84px 20px;
 }
 
@@ -89,7 +93,7 @@ h1 {
   font-size: 17px;
   line-height: 1.45;
   max-width: 520px;
-  margin-left: auto;
+  margin-left: 0;
   margin-bottom: 16px;
 }
 
@@ -146,6 +150,14 @@ h1 {
   background: var(--yellow);
 }
 
+/* Footer */
+.site-footer {
+  padding: 32px 84px;
+  color: var(--gray);
+  font-size: 14px;
+  border-top: 1px solid rgba(228, 61, 18, 0.18);
+}
+
 /* Mobile */
 @media (max-width: 850px) {
   .navbar {
@@ -156,12 +168,16 @@ h1 {
     flex-direction: column;
   }
 
-  nav {
+  .logo {
+    font-size: 30px;
+  }
+
+  .nav-links {
     gap: 18px;
     flex-wrap: wrap;
   }
 
-  nav a {
+  .nav-links a {
     font-size: 18px;
   }
 
@@ -198,5 +214,9 @@ h1 {
   .big-word {
     font-size: 80px;
     white-space: normal;
+  }
+
+  .site-footer {
+    padding: 28px 24px;
   }
 }
