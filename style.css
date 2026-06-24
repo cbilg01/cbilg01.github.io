@@ -61,14 +61,21 @@ body {
 /* Intro section aligned to the left */
 .intro-section {
   min-height: 300px;
-  display: grid;
-  grid-template-columns: 520px 1fr;
   padding: 52px 84px 20px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .intro-text {
+  max-width: 520px;
   text-align: left;
-  align-self: start;
+}
+
+.intro-text p {
+  color: var(--gray);
+  font-size: 17px;
+  line-height: 1.45;
+  margin-bottom: 16px;
 }
 
 .eyebrow {
