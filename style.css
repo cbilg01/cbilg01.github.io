@@ -98,59 +98,6 @@ h1 {
   margin-bottom: 16px;
 }
 
-/* Colorful editorial section */
-.visual-section {
-  position: relative;
-  min-height: 430px;
-  overflow: hidden;
-  padding: 10px 90px 80px;
-}
-
-.big-word {
-  color: var(--red);
-  font-size: clamp(90px, 18vw, 250px);
-  font-weight: 900;
-  letter-spacing: -0.09em;
-  line-height: 0.78;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.color-card {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 280px;
-  border-radius: 0 0 0 28px;
-  overflow: hidden;
-}
-
-.block {
-  height: 84px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 17px;
-  letter-spacing: 0.05em;
-}
-
-.block.red {
-  background: var(--red);
-}
-
-.block.rose {
-  background: var(--rose);
-}
-
-.block.pink {
-  background: var(--pink);
-}
-
-.block.yellow {
-  background: var(--yellow);
-}
-
 /* Footer */
 .site-footer {
   padding: 32px 90px;
