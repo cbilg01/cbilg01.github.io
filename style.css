@@ -216,3 +216,45 @@ h1 {
 .item-2026 {
   margin-top: 0;
 }
+
+/* Divider with color palette */
+.palette-divider {
+  padding: 0 90px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(228, 61, 18, 0.18);
+}
+
+.divider-palette {
+  display: flex;
+  height: 36px;
+  width: 180px;
+  border-radius: 18px 0 0 18px;
+  overflow: hidden;
+}
+
+.palette-block {
+  flex: 1;
+}
+
+.palette-block.red {
+  background: var(--red);
+}
+
+.palette-block.rose {
+  background: var(--rose);
+}
+
+.palette-block.pink {
+  background: var(--pink);
+}
+
+.palette-block.yellow {
+  background: var(--yellow);
+}
