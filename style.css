@@ -42,9 +42,10 @@ body {
   color: var(--dark);
 }
 
+/* Navbar links with more spacing */
 .nav-links {
   display: flex;
-  gap: 34px;
+  gap: 48px;
 }
 
 .nav-links a {
@@ -58,28 +59,21 @@ body {
   color: var(--red);
 }
 
-/* Intro section aligned to the left */
+/* Intro section aligned to the right */
 .intro-section {
   min-height: 300px;
   padding: 52px 84px 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .intro-text {
-  max-width: 520px;
+  max-width: 620px;
   text-align: left;
 }
 
-.intro-text p {
-  color: var(--gray);
-  font-size: 17px;
-  line-height: 1.45;
-  margin-bottom: 16px;
-}
-
 .eyebrow {
-  color: var(--red);
+  color: var(--gray);
   text-transform: uppercase;
   letter-spacing: 0.35em;
   font-size: 13px;
@@ -99,8 +93,7 @@ h1 {
   color: var(--gray);
   font-size: 17px;
   line-height: 1.45;
-  max-width: 520px;
-  margin-left: 0;
+  max-width: 620px;
   margin-bottom: 16px;
 }
 
@@ -180,7 +173,7 @@ h1 {
   }
 
   .nav-links {
-    gap: 18px;
+    gap: 22px;
     flex-wrap: wrap;
   }
 
@@ -189,16 +182,16 @@ h1 {
   }
 
   .intro-section {
-    grid-template-columns: 1fr;
     padding: 60px 24px 30px;
+    justify-content: flex-start;
   }
 
   .intro-text {
+    max-width: 100%;
     text-align: left;
   }
 
   .intro-text p {
-    margin-left: 0;
     font-size: 17px;
   }
 
