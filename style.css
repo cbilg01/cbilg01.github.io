@@ -204,23 +204,15 @@ h1 {
 }
 
 /* Timeline alignment by year */
-.item-2021 {
-  margin-top: 0;
+.timeline-item {
+  position: relative;
+  margin-bottom: 70px;
 }
 
-.item-2023 {
-  margin-top: 120px;
-}
-
-.item-2024 {
-  margin-top: 80px;
-}
-
-.item-2025 {
-  margin-top: 20px;
-}
-
+.item-2021,
+.item-2023,
+.item-2024,
+.item-2025,
 .item-2026 {
-  margin-top: 20px;
-}
+  margin-top: 0;
 }
