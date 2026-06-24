@@ -114,7 +114,7 @@ h1 {
 
 .journey-title {
   color: var(--rose);
-  font-size: clamp(56px, 8vw, 130px);
+  font-size: clamp(54px, 5.5vw, 92px);
   line-height: 0.9;
   letter-spacing: -0.07em;
   font-weight: 900;
