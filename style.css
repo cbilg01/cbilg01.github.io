@@ -10,7 +10,7 @@
   --pink: #ffa2b6;
   --yellow: #efb11d;
   --cream: #ebe9e1;
-  --dark: #111111;
+  --dark: #2b1700;
   --gray: #4d4d4d;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .logo {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--dark);
@@ -46,7 +46,7 @@ nav {
 nav a {
   color: var(--dark);
   text-decoration: none;
-  font-size: 23px;
+  font-size: 20px;
   transition: color 0.2s ease;
 }
 
@@ -54,7 +54,7 @@ nav a:hover {
   color: var(--red);
 }
 
-/* Intro moved up, condensed, and aligned right */
+/* Intro moved up, condensed, and aligned left */
 .intro-section {
   min-height: 360px;
   display: grid;
@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 .intro-text {
-  text-align: right;
+  text-align: left;
   align-self: start;
 }
 
