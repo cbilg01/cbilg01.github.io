@@ -308,7 +308,7 @@ h1 {
 }
 
 .projects-carousel::-webkit-scrollbar-thumb {
-  background: var(--rose);
+  background: var(--yellow);
   border-radius: 20px;
 }
 
