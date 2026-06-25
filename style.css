@@ -64,13 +64,13 @@ body {
   min-height: 430px;
   padding: 78px 90px 30px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .intro-text {
   width: 100%;
   max-width: 620px;
-  text-align: left;
+  text-align: center;
 }
 
 .eyebrow {
