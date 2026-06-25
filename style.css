@@ -259,3 +259,133 @@ h1 {
 .palette-block.yellow {
   background: var(--yellow);
 }
+
+/* Mobile version */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 28px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .logo {
+    font-size: 26px;
+    transform: none;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .intro-section {
+    min-height: auto;
+    padding: 70px 24px 50px;
+    justify-content: center;
+  }
+
+  .intro-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .eyebrow {
+    font-size: 7px;
+    letter-spacing: 0.28em;
+    margin-bottom: 22px;
+  }
+
+  h1 {
+    font-size: clamp(44px, 16vw, 64px);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    margin-bottom: 24px;
+  }
+
+  .intro-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 0 auto 18px;
+  }
+
+  .journey-section {
+    padding: 60px 24px 90px;
+  }
+
+  .journey-title {
+    font-size: clamp(44px, 15vw, 64px);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    max-width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .timeline-wrapper {
+    grid-template-columns: 1fr;
+    gap: 70px;
+    max-width: 100%;
+  }
+
+  .timeline-column {
+    padding-left: 36px;
+  }
+
+  .timeline-column h3 {
+    font-size: 17px;
+    letter-spacing: 0.14em;
+    margin-bottom: 38px;
+  }
+
+  .timeline-line {
+    left: 8px;
+    top: 58px;
+  }
+
+  .timeline-dot {
+    left: -36px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-item {
+    margin-bottom: 50px;
+  }
+
+  .timeline-date {
+    font-size: 12px;
+  }
+
+  .timeline-item h4 {
+    font-size: 21px;
+  }
+
+  .timeline-item p {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .palette-divider {
+    padding: 0 24px;
+  }
+
+  .divider-palette {
+    width: 120px;
+    height: 28px;
+  }
+
+  .site-footer {
+    padding: 28px 24px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
