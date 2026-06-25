@@ -274,7 +274,7 @@ h1 {
 }
 
 .projects-heading h2 {
-  color: var(--yellow);
+  color: var(--rose);
   font-size: clamp(54px, 5.5vw, 92px);
   line-height: 0.9;
   letter-spacing: -0.07em;
@@ -403,7 +403,7 @@ h1 {
 
 .project-download:hover {
   background: var(--rose);
-  color: var(--dark);
+  color: var(--cream);
   border-color: var(--rose);
 }
 
