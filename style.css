@@ -261,31 +261,6 @@ h1 {
 }
 
 /* Learning page intro */
-.learning-intro {
-  min-height: 360px;
-  padding: 78px 90px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.learning-intro-text {
-  width: 100%;
-  max-width: 850px;
-  text-align: center;
-}
-
-.learning-intro-text h1 {
-  color: var(--rose);
-}
-
-.learning-intro-text p {
-  color: var(--gray);
-  font-size: 17px;
-  line-height: 1.6;
-  max-width: 760px;
-  margin: 0 auto 18px;
-}
 
 /* Projects carousel section */
 .projects-section {
@@ -310,7 +285,7 @@ h1 {
   color: var(--gray);
   font-size: 17px;
   line-height: 1.6;
-  max-width: 680px;
+  max-width: 850px;
 }
 
 /* The actual carousel */
@@ -413,23 +388,23 @@ h1 {
 }
 
 .project-button {
-  background: var(--red);
+  background: var(--yellow);
   color: var(--cream);
 }
 
 .project-button:hover {
-  background: var(--rose);
+  background: var(--red);
 }
 
 .project-download {
-  color: var(--red);
+  color: var(--yellow);
   border: 1px solid rgba(228, 61, 18, 0.35);
 }
 
 .project-download:hover {
-  background: var(--yellow);
-  color: var(--dark);
-  border-color: var(--yellow);
+  background: var(--red);
+  color: var(--cream);
+  border-color: var(--red);
 }
 
 /* Mobile version */
