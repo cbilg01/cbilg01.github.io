@@ -69,7 +69,7 @@ body {
 
 .intro-text {
   width: 100%;
-  max-width: 620px;
+  max-width: 850px;
   text-align: center;
 }
 
@@ -93,9 +93,9 @@ h1 {
 .intro-text p {
   color: var(--gray);
   font-size: 17px;
-  line-height: 1.45;
-  max-width: 720px;
-  margin-bottom: 16px;
+  line-height: 1.6;
+  max-width: 760px;
+  margin-bottom: 0 auto 18px;
 }
 
 /* Footer */
