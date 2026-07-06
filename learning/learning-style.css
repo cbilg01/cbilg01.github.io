@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #e43d12;
+  --rose: #d6536d;
+  --pink: #ffa2b6;
+  --yellow: #efb11d;
+  --cream: #ebe9e1;
+  --dark: #2b1700;
+  --gray: #4d4d4d;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+}
+
+/* Top bar */
+.site-header {
+  background: var(--cream);
+}
+
+.navbar {
+  height: 105px;
+  padding: 0 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(228, 61, 18, 0.18);
+  background: var(--cream);
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  transform: translateY(10px);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--red);
+}
+
+/* Footer */
+.site-footer {
+  padding: 32px 90px;
+  color: var(--gray);
+  font-size: 14px;
+  border-top: 1px solid rgba(228, 61, 18, 0.18);
+}
+
+/* Learning page intro */
+
+/* Projects carousel section */
+.projects-section {
+  padding: 70px 90px 120px;
+  background: var(--cream);
+}
+
+.projects-heading {
+  max-width: 850px;
+  margin-bottom: 55px;
+}
+
+.projects-heading h2 {
+  color: var(--red);
+  font-size: clamp(54px, 5.5vw, 92px);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  margin-bottom: 24px;
+}
+
+.projects-heading p {
+  color: var(--gray);
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 850px;
+}
+
+/* The actual carousel */
+.projects-carousel {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 24px;
+}
+
+/* Optional: makes the scrollbar look cleaner */
+.projects-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-carousel::-webkit-scrollbar-track {
+  background: rgba(228, 61, 18, 0.12);
+  border-radius: 20px;
+}
+
+.projects-carousel::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+  border-radius: 20px;
+}
+
+.project-card {
+  min-width: 420px;
+  max-width: 420px;
+  background: rgba(255, 162, 182, 0.13);
+  border: 1px solid rgba(228, 61, 18, 0.22);
+  border-radius: 30px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--red);
+}
+
+.project-image {
+  width: 100%;
+  height: 250px;
+  background: var(--pink);
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* If the image is missing, the pink box still appears */
+.project-content {
+  padding: 30px;
+}
+
+.project-category {
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.project-content h3 {
+  color: var(--dark);
+  font-size: 30px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.project-content p {
+  color: var(--gray);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.project-button,
+.project-download {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+}
+
+.project-button {
+  background: var(--red);
+  color: var(--cream);
+}
+
+.project-button:hover {
+  background: var(--rose);
+}
+
+.project-download {
+  color: var(--red);
+  border: 1px solid rgba(228, 61, 18, 0.35);
+}
+
+.project-download:hover {
+  background: var(--rose);
+  color: var(--cream);
+  border-color: var(--rose);
+}
+
+/* Individual project page */
+.project-page-section {
+  padding: 70px 90px 120px;
+  background: var(--cream);
+}
+
+.project-page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.project-page-images {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-page-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+  border: 1px solid rgba(228, 61, 18, 0.22);
+}
+
+.project-page-text {
+  padding-top: 10px;
+}
+
+.project-page-text h1 {
+  color: var(--rose);
+  font-size: clamp(48px, 5vw, 82px);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  margin-bottom: 30px;
+}
+
+.project-page-text p {
+  color: var(--gray);
+  font-size: 17px;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.project-page-download {
+  max-width: 1200px;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Mobile version */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 28px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .logo {
+    font-size: 26px;
+    transform: none;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .site-footer {
+    padding: 28px 24px;
+    font-size: 13px;
+    text-align: center;
+  }
+    .learning-intro {
+    min-height: auto;
+    padding: 70px 24px 50px;
+  }
+
+  .learning-intro-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .learning-intro-text p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .projects-section {
+    padding: 60px 24px 90px;
+  }
+
+  .projects-heading {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .projects-heading h2 {
+    font-size: clamp(44px, 15vw, 64px);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+  }
+
+  .projects-heading p {
+    font-size: 16px;
+  }
+
+  .projects-carousel {
+    gap: 20px;
+  }
+
+  .project-card {
+    min-width: 82vw;
+    max-width: 82vw;
+    border-radius: 26px;
+  }
+
+  .project-image {
+    height: 210px;
+  }
+
+  .project-content {
+    padding: 26px;
+  }
+
+  .project-content h3 {
+    font-size: 25px;
+  }
+
+  .project-content p {
+    font-size: 15px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+    .project-page-section {
+    padding: 60px 24px 90px;
+  }
+
+  .project-page-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .project-page-images {
+    gap: 18px;
+  }
+
+  .project-page-images img {
+    border-radius: 24px;
+  }
+
+  .project-page-text {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .project-page-text h1 {
+    font-size: clamp(44px, 15vw, 64px);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+  }
+
+  .project-page-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .project-page-download {
+    margin-top: 36px;
+    justify-content: center;
+  }
+}
