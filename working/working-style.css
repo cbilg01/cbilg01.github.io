@@ -186,6 +186,33 @@ body {
   display: none;
 }
 
+.read-more summary {
+  cursor: pointer;
+  color: var(--red);
+  font-weight: 700;
+  margin-top: 10px;
+  list-style: none;
+}
+
+/* remove default arrow styling (optional but cleaner) */
+.read-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.read-more summary::after {
+  content: " +";
+}
+
+.read-more[open] summary::after {
+  content: " −";
+}
+
+.read-more p {
+  margin-top: 10px;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
 /* Mobile version */
 @media (max-width: 768px) {
 
