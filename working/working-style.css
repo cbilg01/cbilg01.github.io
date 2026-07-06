@@ -186,11 +186,18 @@ body {
   display: none;
 }
 
+/* Read more style */
+
+.read-more {
+  display: block;
+}
+
 .read-more summary {
   cursor: pointer;
   color: var(--red);
   font-weight: 700;
   margin-top: 10px;
+  display: block;
   list-style: none;
 }
 
