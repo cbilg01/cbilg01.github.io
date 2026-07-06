@@ -6,7 +6,7 @@ This is my personal professional website where I showcase my projects, work expe
 
 - `index.html` — Main homepage
 - `style.css` — Styling for the website
-- `learning.html` — Sub-page with its own subpages and style
+- `learning/learning.html` — Sub-page with its own subpages and style
 
 ## Built With
 
