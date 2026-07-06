@@ -222,9 +222,9 @@ body {
 
 .project-page-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 70px;
-  max-width: 1200px;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 100px;
+  max-width: 1400px;
   margin: 0 auto;
   align-items: start;
 }
@@ -248,7 +248,7 @@ body {
 }
 
 .project-page-text h1 {
-  color: var(--rose);
+  color: var(--dark);
   font-size: clamp(48px, 5vw, 82px);
   line-height: 0.9;
   letter-spacing: -0.07em;
