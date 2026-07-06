@@ -173,6 +173,19 @@ body {
   color: var(--gray);
 }
 
+/* ===== NO IMAGE OVERRIDE ===== */
+.working-card.no-image {
+  display: block;
+}
+
+.working-card.no-image .working-content {
+  width: 100%;
+}
+
+.working-card.no-image .working-image {
+  display: none;
+}
+
 /* Mobile version */
 @media (max-width: 768px) {
 
