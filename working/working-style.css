@@ -78,6 +78,7 @@ body {
 .projects-heading {
   max-width: 850px;
   margin-bottom: 55px;
+  text-align: left;
 }
 
 .projects-heading h2 {
