@@ -113,7 +113,7 @@ h1 {
 }
 
 .journey-title {
-  color: var(--rose);
+  color: var(--dark);
   font-size: clamp(54px, 5.5vw, 92px);
   line-height: 0.9;
   letter-spacing: -0.07em;
@@ -274,7 +274,7 @@ h1 {
 }
 
 .projects-heading h2 {
-  color: var(--rose);
+  color: var(--red);
   font-size: clamp(54px, 5.5vw, 92px);
   line-height: 0.9;
   letter-spacing: -0.07em;
