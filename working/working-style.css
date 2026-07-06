@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #e43d12;
+  --rose: #d6536d;
+  --pink: #ffa2b6;
+  --yellow: #efb11d;
+  --cream: #ebe9e1;
+  --dark: #2b1700;
+  --gray: #4d4d4d;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+}
+
+/* Top bar */
+.site-header {
+  background: var(--cream);
+}
+
+.navbar {
+  height: 105px;
+  padding: 0 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(228, 61, 18, 0.18);
+  background: var(--cream);
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  transform: translateY(10px);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--red);
+}
+
+/* Footer */
+.site-footer {
+  padding: 32px 90px;
+  color: var(--gray);
+  font-size: 14px;
+  border-top: 1px solid rgba(228, 61, 18, 0.18);
+}
+
+/* Working page intro */
+
+/* Projects carousel section */
+.projects-section {
+  padding: 70px 90px 120px;
+  background: var(--cream);
+}
+
+.projects-heading {
+  max-width: 850px;
+  margin-bottom: 55px;
+}
+
+.projects-heading h2 {
+  color: var(--red);
+  font-size: clamp(54px, 5.5vw, 92px);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  margin-bottom: 24px;
+}
+
+.projects-heading p {
+  color: var(--gray);
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 850px;
+}
+
+/* The actual carousel */
+
+.working-carousel {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 24px;
+}
+
+/* scrollbar */
+.working-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.working-carousel::-webkit-scrollbar-track {
+  background: rgba(228, 61, 18, 0.12);
+  border-radius: 20px;
+}
+
+.working-carousel::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+  border-radius: 20px;
+}
+
+/* working cards */
+
+.working-card {
+  min-width: 780px;
+  flex: 0 0 auto;
+
+  display: flex;
+  gap: 30px;
+
+  background: rgba(255, 162, 182, 0.13);
+  border: 1px solid rgba(228, 61, 18, 0.22);
+  border-radius: 30px;
+  padding: 30px;
+
+  scroll-snap-align: start;
+
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.working-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--red);
+}
+
+/* IMAGE LEFT SIDE */
+
+.working-image {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.working-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+/* TEXT RIGHT SIDE */
+
+.working-content {
+  width: 60%;
+}
+
+.project-category {
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.working-content h3 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: var(--dark);
+}
+
+.working-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+
+  /* SECTION PADDING */
+  .projects-section {
+    padding: 60px 24px 90px;
+  }
+
+  /* HEADING */
+  .projects-heading {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .projects-heading h2 {
+    font-size: clamp(44px, 12vw, 64px);
+    line-height: 0.95;
+  }
+
+  .projects-heading p {
+    font-size: 16px;
+  }
+
+  /* CAROUSEL - still horizontal but smoother on mobile */
+  .working-carousel {
+    gap: 18px;
+    padding-bottom: 20px;
+  }
+
+  /* CARD - IMPORTANT CHANGE */
+  .working-card {
+    min-width: 85vw;
+    flex-direction: column;   /* stack image + text */
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  /* IMAGE becomes full width on top */
+  .working-image {
+    width: 100%;
+  }
+
+  .working-image img {
+    height: 200px;
+    border-radius: 16px;
+  }
+
+  /* TEXT full width under image */
+  .working-content {
+    width: 100%;
+  }
+
+  .working-content h3 {
+    font-size: 22px;
+  }
+
+  .working-content p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* NAVBAR FIX */
+  .navbar {
+    height: auto;
+    padding: 24px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .logo {
+    transform: none;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    padding: 24px;
+    text-align: center;
+  }
+}
