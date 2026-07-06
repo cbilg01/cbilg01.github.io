@@ -105,21 +105,6 @@ body {
   width: 100%;
 }
 
-/* scrollbar */
-.working-carousel::-webkit-scrollbar {
-  height: 8px;
-}
-
-.working-carousel::-webkit-scrollbar-track {
-  background: rgba(228, 61, 18, 0.12);
-  border-radius: 20px;
-}
-
-.working-carousel::-webkit-scrollbar-thumb {
-  background: var(--yellow);
-  border-radius: 20px;
-}
-
 /* working cards */
 
 .working-card {
