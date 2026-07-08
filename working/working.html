@@ -39,6 +39,10 @@
 
     <div class="carousel-wrapper">
 
+      <button class="carousel-arrow back" onclick="scrollBack()">
+        ←
+      </button>
+
       <button class="carousel-arrow" onclick="scrollCarousel()">
         →
       </button>
@@ -137,11 +141,21 @@
 
   <script>
   function scrollCarousel() {
-    document.querySelector(".working-carousel").scrollBy({
-      left: 700,
-      behavior: "smooth"
+    const carousel = document.querySelector(".working-carousel");
+    carousel.scrollBy({
+    left: 700,
+    behavior: "smooth"
     });
   }
+    
+  function scrollBack() {
+    const carousel = document.querySelector(".working-carousel");
+    carousel.scrollBy({
+    left: -700,
+    behavior: "smooth"
+    });
+  }
+
   </script>
 
 </body>
