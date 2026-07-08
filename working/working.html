@@ -37,24 +37,17 @@
       </p>
     </div>
 
-    <div class="carousel-controls">
+      <div class="projects-carousel">
 
-      <button class="carousel-arrow back" onclick="scrollBack()">
-        ←
-      </button>
+      <article class="project-card">
+        <div class="project-image">
+          <img src="../images/GenAI_Infineon_foto.jpg" alt="Project 1 preview image">
+        </div>
 
-      <button class="carousel-arrow" onclick="scrollCarousel()">
-        →
-      </button>
-    </div>
-
-      <div class="working-carousel">
-
-      <!-- CARD 1 -->
-      <article class="working-card no-image">
-        <div class="working-content">
+        <div class="project-content">
           <p class="project-category">Strategy</p>
           <h3>When corporate feels like a startup: building communication for digitalization</h3>
+
           <p>
             My most recent professional experience was the most challenging but also rewarding: the Digitalization team at Infineon had grown significantly over the past year and wanted to strengthen its communication. 
             From day one, I was tasked with building a communication plan to increase awareness across the organization. On top of that, I was responsible for both implementation and evaluation.  
@@ -71,67 +64,86 @@
             </p>
 
            </details>
-
+          
         </div>
       </article>
 
-      <!-- CARD 2 -->
-      <article class="working-card no-image">
-        <div class="working-content">
+       <article class="project-card">
+        <div class="project-content">
           <p class="project-category">Marketing</p>
           <h3>Repositioning an established product</h3>
+
           <p>
             At Bosch, one of the projects I particularly enjoyed was supporting the repositioning of an established fire alarm system. 
-            The product was integrated into a new business umbrella, which required a complete shift in its narrative, target audience, and overall market positioning. 
+            The product was integrated into a new business umbrella, which required a complete shift in its narrative, target audience, and overall market positioning.  
+          </p>
+          
+          <details class="read-more">
+            <summary>Read more</summary>
+
+            <p>
             The first step was to redefine the product storyline, clarifying who we were speaking to, which customer needs and pain points we were addressing, and which key benefits should be emphasized. 
             From there, we translated this into a new positioning and communication approach that aligned with the broader strategic direction of the portfolio. 
             I was responsible for shaping this initial narrative and supporting the rebranding process under the guidance of the Head of Marketing. 
             Unfortunately, I did not see the process through to the end, but it was still a valuable experience in understanding how established products can be strategically reframed within a new context.
-          </p>
+            </p>
+
+           </details>
+          
         </div>
       </article>
 
-      <!-- CARD 3 -->
-      <article class="working-card no-image">
-        <div class="working-content">
+      <article class="project-card">
+        <div class="project-content">
           <p class="project-category">General Skills</p>
           <h3>Tables Turned</h3>
+
           <p>
             One particularly interesting experience (not directly tied to my main professional focus, but highly insightful) was supporting hiring activities. 
-            As part of my role in Corporate Communication for Digitalization, we decided to bring in a second working student to strengthen the team, and I was entrusted with leading the hiring process. 
+            As part of my role in Corporate Communication for Digitalization, we decided to bring in a second working student to strengthen the team, and I was entrusted with leading the hiring process.  
+          </p>
+          
+          <details class="read-more">
+            <summary>Read more</summary>
+
+            <p>
             Suddenly, the “tables turned”: I went from being a candidate to being responsible for evaluating candidates. 
             My tasks included CV screening, conducting interviews, and contributing to the development and evaluation of a case study. 
             This experience gave me a completely new perspective on recruitment and team building, and offered valuable insight into how hiring decisions are made. 
             It was also a meaningful first exposure to a responsibility I expect to take on more frequently in future roles.
-          </p>
+            </p>
+
+           </details>
+          
         </div>
       </article>
 
-      <!-- CARD 4 -->
-      <article class="working-card">
-
-        <div class="working-image">
-          <img src="../images/example2.jpg" alt="Project image">
-        </div>
-
-        <div class="working-content">
+      <article class="project-card">
+        <div class="project-content">
           <p class="project-category">Events</p>
-          <h3>Events & I </h3>
+          <h3>Events & I</h3>
+
           <p>
             My experience with events started early in my career at Sweet Communication, with seasonal agency events where clients presented new collections. 
-            On a more corporate level, I also supported the organization of Bosch’s annual Sales Meeting in Valencia, a 100-person event where product managers and sales teams align on product and marketing topics. 
+            On a more corporate level, I also supported the organization of Bosch’s annual Sales Meeting in Valencia, a 100-person event where product managers and sales teams align on product and marketing topics.   
+          </p>
+          
+          <details class="read-more">
+            <summary>Read more</summary>
+
+            <p>
             Here, I contributed to the agenda, coordination with product managers, content flow, and on-site organization to ensure everything ran smoothly. 
             At Infineon, I applied this experience to internal communication events, including an annual showcase of the digitalization team’s work, featuring speaker notes, solution presentations, and a panel discussion. 
             In addition, I supported the organization of the Rising Star Alumni Conference in Dresden, a 35-person event focused on networking and talent development within the company. 
             Across all experiences, one thing became clear: events are complex and often unpredictable, but they are incredibly rewarding, especially when everything comes together on the day.
-          </p>
-        </div>
+            </p>
 
+           </details>
+          
+        </div>
       </article>
 
     </div>
-   </div>
-
   </section>
 
 </main>
@@ -139,25 +151,6 @@
   <footer class="site-footer">
     <p>© 2026 Catarina Bossolla Ilg. All rights reserved.</p>
   </footer>
-
-  <script>
-  function scrollCarousel() {
-    const carousel = document.querySelector(".working-carousel");
-    carousel.scrollBy({
-    left: 700,
-    behavior: "smooth"
-    });
-  }
-    
-  function scrollBack() {
-    const carousel = document.querySelector(".working-carousel");
-    carousel.scrollBy({
-    left: -700,
-    behavior: "smooth"
-    });
-  }
-
-  </script>
 
 </body>
   
