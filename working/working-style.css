@@ -100,7 +100,7 @@ body {
 
 /* The actual carousel */
 
-carousel-wrapper {
+.carousel-wrapper {
   position: relative;
   width: 100%;
 }
