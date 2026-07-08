@@ -217,10 +217,19 @@ body {
 /* Read more style */
 
 .read-more {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.read-more p {
+  order: 1;
+  margin-top: 10px;
+  color: var(--gray);
+  line-height: 1.6;
 }
 
 .read-more summary {
+  order: 2;
   cursor: pointer;
   color: var(--red);
   font-weight: 700;
@@ -230,21 +239,15 @@ body {
 }
 
 .read-more summary::-webkit-details-marker {
-  display:none;
+  display: none;
 }
 
 .read-more summary::after {
-  content:" +";
+  content: " +";
 }
 
 .read-more[open] summary::after {
-  content:" −";
-}
-
-.read-more p {
-  margin-top:10px;
-  color:var(--gray);
-  line-height:1.6;
+  content: " −";
 }
 
 /* Mobile version */
