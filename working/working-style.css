@@ -110,7 +110,7 @@ carousel-wrapper {
 .carousel-arrow {
   position: absolute;
   right: 0;
-  top: -70px;
+  top: -35px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -123,6 +123,7 @@ carousel-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
   transition: transform 0.2s ease;
 }
 
