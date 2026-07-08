@@ -100,39 +100,65 @@ body {
 
 /* The actual carousel */
 
+carousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* yellow arrow */
+
+.carousel-arrow {
+  position: absolute;
+  right: 0;
+  top: -70px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: var(--yellow);
+  color: var(--dark);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  transform: translateX(6px);
+}
+
+
+/* scrolling area */
+
 .working-carousel {
   display: flex;
   flex-direction: row;
   gap: 40px;
-
   width: 100%;
-
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
 
-  padding-bottom: 20px;
-
-  scrollbar-width: thin;
+.working-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 /* working cards */
 
 .working-card {
   flex: 0 0 calc(50% - 20px);
-
   min-height: 520px;
-
   display: flex;
-  gap: 30px;
-
+  flex-direction: column;
+  gap: 25px;
   background: rgba(255, 162, 182, 0.13);
   border: 1px solid rgba(228, 61, 18, 0.22);
   border-radius: 30px;
-
-  padding: 40px;
-
-  scroll-snap-align: start;
-
+  padding: 30px;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -141,24 +167,26 @@ body {
   border-color: var(--red);
 }
 
-/* IMAGE LEFT SIDE */
+/* IMAGE TOP */
 
 .working-image {
-  width: 45%;
+  width: 100%;
+  height: 230px;
+  flex-shrink: 0;
 }
 
 .working-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   border-radius: 20px;
   display: block;
 }
 
-/* TEXT RIGHT SIDE */
+/* TEXT */
 
 .working-content {
-  width: 55%;
+  width: 100%;
 }
 
 .project-category {
@@ -172,8 +200,8 @@ body {
 
 .working-content h3 {
   font-size: 26px;
+  line-height: 1.2;
   margin-bottom: 12px;
-  color: var(--dark);
 }
 
 .working-content p {
@@ -181,6 +209,7 @@ body {
   line-height: 1.6;
   color: var(--gray);
 }
+
 
 /* ===== NO IMAGE OVERRIDE ===== */
 .working-card.no-image {
@@ -210,110 +239,23 @@ body {
   list-style: none;
 }
 
-/* remove default arrow styling (optional but cleaner) */
 .read-more summary::-webkit-details-marker {
-  display: none;
+  display:none;
 }
 
 .read-more summary::after {
-  content: " +";
+  content:" +";
 }
 
 .read-more[open] summary::after {
-  content: " −";
+  content:" −";
 }
 
 .read-more p {
-  margin-top: 10px;
-  color: var(--gray);
-  line-height: 1.6;
+  margin-top:10px;
+  color:var(--gray);
+  line-height:1.6;
 }
 
 /* Mobile version */
-@media (max-width: 768px) {
 
-  /* Page padding */
-  .projects-section {
-    padding: 60px 20px 80px;
-  }
-
-  /* Heading becomes centered */
-  .projects-heading {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .projects-heading h2 {
-    font-size: clamp(42px, 12vw, 64px);
-    line-height: 1;
-  }
-
-  .projects-heading p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0 auto;
-  }
-
-  /* Card becomes vertical */
-  .working-carousel {
-    gap:20px;
-  }
-
-  .working-card {
-    flex: 0 0 90%;
-    min-height:auto;
-    flex-direction:column;
-    padding:25px;
-  }
-
-  /* Image full width */
-  .working-image {
-    width: 100%;
-  }
-
-  .working-image img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 18px;
-  }
-
-  /* Text full width */
-  .working-content {
-    width: 100%;
-  }
-
-  .working-content h3 {
-    font-size: 22px;
-    line-height: 1.2;
-  }
-
-  .working-content p {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  /* Navbar fix */
-  .navbar {
-    height: auto;
-    padding: 20px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .logo {
-    transform: none;
-  }
-
-  /* Footer */
-  .site-footer {
-    padding: 24px;
-    text-align: center;
-  }
-}
