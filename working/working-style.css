@@ -107,28 +107,39 @@ body {
 
 /* yellow arrow */
 
-.carousel-arrow {
+.carousel-controls {
+
   position: absolute;
   right: 0;
-  top: -35px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
+  top: -55px;
+  display: flex;
+  gap: 12px;
+}
+
+
+.carousel-arrow {
+  padding: 12px 22px;
+  border-radius: 30px;
   border: none;
   background: var(--yellow);
   color: var(--dark);
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 10;
+  gap: 8px;
   transition: transform 0.2s ease;
 }
 
 .carousel-arrow:hover {
-  transform: translateX(6px);
+  transform: translateX(5px);
+}
+
+/* Back button moves opposite direction */
+
+.carousel-arrow.back:hover {
+  transform: translateX(-5px);
 }
 
 
