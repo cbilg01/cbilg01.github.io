@@ -254,4 +254,163 @@ body {
 }
 
 /* Mobile version */
+@media (max-width: 768px) {
 
+  /* Top bar */
+  .navbar {
+    height: auto;
+    padding: 28px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+
+  /* Footer */
+  .site-footer {
+    padding: 28px 24px;
+    font-size: 13px;
+  }
+
+
+  /* Projects section */
+  .projects-section {
+    padding: 50px 24px 80px;
+  }
+
+  .projects-heading {
+    margin-bottom: 35px;
+  }
+
+  .projects-heading h2 {
+    font-size: clamp(48px, 14vw, 68px);
+    line-height: 0.92;
+    letter-spacing: -0.06em;
+    margin-bottom: 20px;
+  }
+
+  .projects-heading p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+
+  /* Carousel */
+  .projects-carousel {
+    gap: 18px;
+    padding-bottom: 18px;
+  }
+
+
+  /* Cards */
+  .project-card {
+    min-width: 85vw;
+    max-width: 85vw;
+    border-radius: 24px;
+  }
+
+  .project-image {
+    height: 210px;
+  }
+
+  .project-content {
+    padding: 24px;
+  }
+
+  .project-category {
+    font-size: 11px;
+    margin-bottom: 14px;
+  }
+
+  .project-content h3 {
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+
+  .project-content p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+
+  /* Buttons */
+  .project-links {
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .project-button,
+  .project-download {
+    font-size: 13px;
+    padding: 11px 16px;
+  }
+
+
+  /* Read more */
+  .read-more p {
+    margin-top: 8px;
+  }
+
+  .read-more summary {
+    margin-top: 8px;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 24px 20px;
+  }
+
+  .projects-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .projects-heading h2 {
+    font-size: 52px;
+  }
+
+  .project-card {
+    min-width: 90vw;
+    max-width: 90vw;
+  }
+
+  .project-image {
+    height: 190px;
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+  .project-content h3 {
+    font-size: 24px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-button,
+  .project-download {
+    text-align: center;
+  }
+}
