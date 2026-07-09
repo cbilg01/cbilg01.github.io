@@ -75,11 +75,12 @@ body {
 .contact-section {
   padding: 70px 90px 120px;
   background: var(--cream);
+  text-align: center;
 }
 
 .contact-heading {
   max-width: 850px;
-  margin-bottom: 60px;
+  margin: 0 auto 45px;
 }
 
 .contact-heading h2 {
@@ -101,7 +102,7 @@ body {
 /* Contact details */
 
 .contact-details {
-  margin-bottom: 90px;
+  margin-bottom: 45px;
 }
 
 .contact-details p {
@@ -130,6 +131,7 @@ body {
 
 .impressum {
   max-width: 600px;
+  margin: 0 auto;
   padding-top: 40px;
   border-top: 1px solid rgba(228, 61, 18, 0.18);
 }
@@ -147,7 +149,7 @@ body {
 }
 
 .legal-links {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .legal-links a {
