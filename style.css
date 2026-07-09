@@ -85,7 +85,7 @@ body {
   margin-bottom: 28px;
 }
 
-h1 {
+.intro-title {
   color: var(--red);
   font-size: clamp(54px, 5.5vw, 92px);
   line-height: 0.9;
