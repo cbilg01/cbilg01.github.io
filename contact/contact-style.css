@@ -228,23 +228,82 @@ body {
 /* Mobile */
 
 @media (max-width: 768px) {
-.contact-heading {
+.navbar {
+    height: auto;
+    padding: 28px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .logo {
+    font-size: 26px;
+    transform: none;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .site-footer {
+    padding: 28px 24px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .contact-section {
+  padding: 60px 24px 90px;
+  }
+  .contact-heading {
   text-align: center;
   margin-bottom: 45px;
-}
+  }
 
-.contact-heading h2 {
-  font-size: clamp(44px, 15vw, 64px);
-}
+  .contact-heading h2 {
+    font-size: clamp(44px, 15vw, 64px);
+  }
 
-.contact-details {
-  margin-bottom: 60px;
-}
+  .contact-details {
+    margin-bottom: 60px;
+  }
+  
+  .contact-details p {
+    font-size: 17px;
+  }
+  
+  .impressum {
+    max-width: 100%;
+    padding-top: 30px;
+  }
 
-.contact-details p {
-  font-size: 17px;
-}
+  .privacy-section {
+  padding: 60px 24px 90px;
+  }
 
-.impressum {
-  padding-top: 30px;
-}
+  .privacy-heading {
+    margin-bottom: 45px;
+  }
+
+  .privacy-heading h2 {
+    font-size: clamp(44px, 15vw, 64px);
+  }
+
+  .privacy-content h3 {
+    font-size: 22px;
+  }
+  
+  .privacy-content p {
+    font-size: 15px;
+  }
+
+  .contact-details a {
+  word-break: break-word;
+  }
+ }
