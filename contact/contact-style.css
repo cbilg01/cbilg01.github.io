@@ -98,81 +98,74 @@ body {
 }
 
 
-/* Contact boxes */
+/* Contact details */
 
-.contact-boxes {
-  display: flex;
-  gap: 28px;
+.contact-details {
+  margin-bottom: 90px;
 }
 
-.contact-box {
-  flex: 1;
-  min-height: 220px;
-  padding: 40px;
-  background: rgba(255, 162, 182, 0.13);
-  border: 1px solid rgba(228, 61, 18, 0.22);
-  border-radius: 30px;
-  text-decoration: none;
-  transition: transform 0.2s ease, border-color 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.contact-details p {
+  font-size: 20px;
+  color: var(--dark);
+  margin-bottom: 18px;
 }
 
-.contact-box:hover {
-  transform: translateY(-6px);
-  border-color: var(--red);
-}
-
-.contact-label {
-  color: var(--red);
-  font-size: 12px;
+.contact-details span {
   font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  color: var(--red);
+}
+
+.contact-details a {
+  color: var(--dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-details a:hover {
+  color: var(--red);
+}
+
+
+/* Impressum */
+
+.impressum {
+  max-width: 600px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(228, 61, 18, 0.18);
+}
+
+.impressum h3 {
+  color: var(--red);
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
-.contact-box h3 {
-  color: var(--dark);
-  font-size: 28px;
-  line-height: 1.2;
+.impressum p {
+  color: var(--gray);
+  font-size: 16px;
+  line-height: 1.6;
 }
-
 
 /* Mobile */
 
 @media (max-width: 768px) {
-  .contact-section {
-    padding: 60px 24px 90px;
-  }
+.contact-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
 
-  .contact-heading {
-    text-align: center;
-    margin-bottom: 45px;
-  }
+.contact-heading h2 {
+  font-size: clamp(44px, 15vw, 64px);
+}
 
-  .contact-heading h2 {
-    font-size: clamp(44px, 15vw, 64px);
-  }
+.contact-details {
+  margin-bottom: 60px;
+}
 
-  .contact-heading p {
-    font-size: 16px;
-  }
+.contact-details p {
+  font-size: 17px;
+}
 
-  .contact-boxes {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .contact-box {
-    min-height: 180px;
-    padding: 30px;
-    text-align: center;
-  }
-
-  .contact-box h3 {
-    font-size: 22px;
-  }
-
+.impressum {
+  padding-top: 30px;
 }
