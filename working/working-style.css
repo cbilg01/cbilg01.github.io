@@ -402,40 +402,67 @@ body {
     font-size: 13px;
     text-align: center;
   }
+    .learning-intro {
+    min-height: auto;
+    padding: 70px 24px 50px;
+  }
+
+  .learning-intro-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .learning-intro-text p {
+    font-size: 16px;
+    max-width: 100%;
+  }
 
   .projects-section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 60px 24px 90px;
+  }
+
+  .projects-heading {
+    text-align: center;
+    margin-bottom: 45px;
   }
 
   .projects-heading h2 {
-    font-size: 52px;
+    font-size: clamp(44px, 15vw, 64px);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+  }
+
+  .projects-heading p {
+    font-size: 16px;
+  }
+
+  .projects-carousel {
+    gap: 20px;
   }
 
   .project-card {
-    min-width: 90vw;
-    max-width: 90vw;
+    min-width: 82vw;
+    max-width: 82vw;
+    border-radius: 26px;
   }
 
   .project-image {
-    height: 190px;
+    height: 210px;
   }
 
   .project-content {
-    padding: 20px;
+    padding: 26px;
   }
 
   .project-content h3 {
-    font-size: 24px;
+    font-size: 25px;
+  }
+
+  .project-content p {
+    font-size: 15px;
   }
 
   .project-links {
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
   }
-
-  .project-button,
-  .project-download {
-    text-align: center;
-  }
-}
