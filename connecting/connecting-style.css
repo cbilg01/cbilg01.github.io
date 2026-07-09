@@ -224,72 +224,77 @@ body {
 
 /* Mobile version */
 @media (max-width: 768px) {
-
-  /* Top bar */
   .navbar {
     height: auto;
     padding: 28px 24px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: center;
+    gap: 18px;
   }
 
   .logo {
     font-size: 26px;
+    transform: none;
+    text-align: center;
   }
 
   .nav-links {
-    width: 100%;
-    gap: 18px;
+    gap: 16px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav-links a {
     font-size: 16px;
   }
 
-
-  /* Footer */
   .site-footer {
     padding: 28px 24px;
     font-size: 13px;
+    text-align: center;
+  }
+    .learning-intro {
+    min-height: auto;
+    padding: 70px 24px 50px;
   }
 
+  .learning-intro-text {
+    max-width: 100%;
+    text-align: center;
+  }
 
-  /* Projects section */
+  .learning-intro-text p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
   .projects-section {
-    padding: 50px 24px 80px;
+    padding: 60px 24px 90px;
   }
 
   .projects-heading {
-    margin-bottom: 35px;
+    text-align: center;
+    margin-bottom: 45px;
   }
 
   .projects-heading h2 {
-    font-size: clamp(48px, 14vw, 68px);
-    line-height: 0.92;
+    font-size: clamp(44px, 15vw, 64px);
+    line-height: 0.95;
     letter-spacing: -0.06em;
-    margin-bottom: 20px;
   }
 
   .projects-heading p {
     font-size: 16px;
-    line-height: 1.55;
   }
 
-
-  /* Carousel */
   .projects-carousel {
-    gap: 18px;
-    padding-bottom: 18px;
+    gap: 20px;
   }
 
-
-  /* Cards */
   .project-card {
-    min-width: 85vw;
-    max-width: 85vw;
-    border-radius: 24px;
+    min-width: 82vw;
+    max-width: 82vw;
+    border-radius: 26px;
   }
 
   .project-image {
@@ -297,22 +302,58 @@ body {
   }
 
   .project-content {
-    padding: 24px;
-  }
-
-  .project-category {
-    font-size: 11px;
-    margin-bottom: 14px;
+    padding: 26px;
   }
 
   .project-content h3 {
-    font-size: 26px;
-    margin-bottom: 14px;
+    font-size: 25px;
   }
 
   .project-content p {
     font-size: 15px;
-    line-height: 1.5;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+    .project-page-section {
+    padding: 60px 24px 90px;
+  }
+
+  .project-page-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .project-page-images {
+    gap: 18px;
+  }
+
+  .project-page-images img {
+    border-radius: 24px;
+  }
+
+  .project-page-text {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .project-page-text h1 {
+    font-size: clamp(44px, 15vw, 64px);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+  }
+
+  .project-page-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .project-page-download {
+    margin-top: 36px;
+    justify-content: center;
   }
 
   /* Read more */
@@ -324,3 +365,4 @@ body {
     margin-top: 8px;
   }
 }
+
