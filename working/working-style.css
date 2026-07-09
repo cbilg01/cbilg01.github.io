@@ -372,10 +372,35 @@ body {
 
 
 /* Small phones */
-@media (max-width: 480px) {
-
+@media (max-width: 768px) {
   .navbar {
-    padding: 24px 20px;
+    height: auto;
+    padding: 28px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .logo {
+    font-size: 26px;
+    transform: none;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .site-footer {
+    padding: 28px 24px;
+    font-size: 13px;
+    text-align: center;
   }
 
   .projects-section {
