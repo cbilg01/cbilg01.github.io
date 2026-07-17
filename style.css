@@ -122,7 +122,8 @@ body {
   letter-spacing: -0.07em;
   font-weight: 700;
   max-width: 900px;
-  margin-bottom: 80px;
+  text-align: center;
+  margin: 0 auto 80px;
 }
 
 .timeline-wrapper {
